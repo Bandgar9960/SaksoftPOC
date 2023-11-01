@@ -1,20 +1,17 @@
 package com.saksoft.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "user_details")
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
+@Builder
 public class User {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
